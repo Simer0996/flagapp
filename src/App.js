@@ -7,7 +7,7 @@ function App() {
     <>
       <div>
         <div>
-          <h5>Where in the world</h5>
+          <h5 className="text-3xl p-5">Where in the world</h5>
         </div>
       </div>
       <div>
@@ -21,3 +21,4 @@ function App() {
 }
 
 export default App;
+

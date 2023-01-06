@@ -15,6 +15,7 @@ const SearchInput = ({ onSearch }) => {
         placeholder="Search a country......"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        className="w-[50%] border-solid border-2 border-black text-left h-[30px] m-5 p-3 "
       />
     </form>
   );

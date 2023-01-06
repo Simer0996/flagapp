@@ -78,15 +78,15 @@ const AllCountries = () => {
         </div>
       </div>
 
-      <div>
+      <div className="grid-container">
         {isLoading && !error && <h4>Loading........</h4>}
         {error && !isLoading && <h4>{error}</h4>}
 
         {countries?.map((country) => (
           <Link to={`/country/${country.name.common}`}>
-            <div>
+            <div className="card-styling">
               <div>
-                <img src={country.flags.png} alt="" />
+                <img className=" block m-auto w-[80%]" src={country.flags.png} alt="" />
               </div>
 
               <div>
@@ -102,7 +102,7 @@ const AllCountries = () => {
           </Link>
         ))}
       </div>
-    </div>
+    </div >
   );
 };
 
